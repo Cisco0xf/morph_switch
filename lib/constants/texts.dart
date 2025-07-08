@@ -4,6 +4,8 @@ const String EMPTY_ANIMATION_KEY_0 = "BOTH_VALUES_EMPTY";
 const String EMPTY_ANIMATION_KEY_1 = "SECOND_VALUE_EMPTY";
 const String EMPTY_ANIMATION_KEY_2 = "FIRST_VALUE_EMPTY";
 
+// Assertions
+
 const String SVG_ASSERTION =
     "Only .png, .jpg, .webp, .jpeg images are currently supported. SVG support will be added in a future release.";
 
@@ -13,6 +15,8 @@ const String DIMENSIONS_ERROR =
     "You have to give the switcher both width && height or size";
 
 const String THUMB_RADIUS = "ThumbRadius must be < 0.0";
+
+// Animation Transition keys
 
 const String ON_ICON_ANIMATION_KEY = "XNSO-MNSO-NOLE";
 const String OFF_ICON_ANIMATION_KEY = "GNMD-WQMW-D0EN";

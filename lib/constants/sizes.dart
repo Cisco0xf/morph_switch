@@ -1,6 +1,7 @@
 import 'package:morph_switch/constants/enums.dart';
 import 'package:morph_switch/models/switch_size_model.dart';
 
+// Sizes for the MorphSwitch according to the selected size
 const Map<SwitcherSize, SizeProperties> morphSwitchSizes = {
   SwitcherSize.xSmall: SizeProperties(
     thumbRadius: 18.0,
@@ -34,6 +35,7 @@ const Map<SwitcherSize, SizeProperties> morphSwitchSizes = {
   ),
 };
 
+// Sizes for the MorphSider according to the selected size
 const Map<SwitcherSize, SizeProperties> morphSliderSizes = {
   SwitcherSize.xSmall: SizeProperties(
     thumbRadius: 20.0,
