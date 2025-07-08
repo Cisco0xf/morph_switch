@@ -119,7 +119,7 @@ MorphSwitch(
 
 |MorphSwitch off State                                                                                           | MorphSwitch on State                          |                                                                      
 |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| ![offState](https://github.com/Cisco0xf/morph_switch/blob/main/screenshots/shadow_switcher_off.jpg)  | ![onState](https://github.com/Cisco0xf/morph_switch/blob/main/screenshots/shadow_switcher_on.jpg) | | 
+| ![offState](https://raw.githubusercontent.com/Cisco0xf/morph_switch/blob/main/screenshots/shadow_switcher_off.jpg)  | ![onState](https://raw.githubusercontent.com/Cisco0xf/morph_switch/blob/main/screenshots/shadow_switcher_on.jpg) | | 
 
 ### Example 2
 
@@ -202,7 +202,7 @@ MorphSwitch(
 ```
 #### Screenshots
 
-![Custom_sizes](https://github.com/Cisco0xf/morph_switch/blob/main/screenshots/customized_sizes.jpg)
+![Custom_sizes](https://raw.githubusercontent.com/Cisco0xf/morph_switch/blob/main/screenshots/customized_sizes.jpg)
 
 > Customizable sizes for the `width`, `height`, and `thumbRadius`
 
@@ -254,7 +254,7 @@ MorphSwitch(
 
 #### Screenshot
 
-![Glassmorphism](https://github.com/Cisco0xf/morph_switch/blob/main/screenshots/glass_switcher.jpg)
+![Glassmorphism](https://raw.githubusercontent.com/Cisco0xf/morph_switch/blob/main/screenshots/glass_switcher.jpg)
 
 ### Example 4
 
@@ -347,7 +347,7 @@ MorphSwitch(
 
 #### Screenshot
 
-![CustomBorderRadius](https://github.com/Cisco0xf/morph_switch/blob/main/screenshots/customize_radius.jpg)
+![CustomBorderRadius](https://raw.githubusercontent.com/Cisco0xf/morph_switch/blob/main/screenshots/customize_radius.jpg)
 
 > Customizable borderradius(`SwitcherRadius`) and gradient backgroud
 
@@ -420,7 +420,7 @@ MorphSwitch(
 
 |Vertical MorphSwitch                                                                                           |Vertical MorphSlider                          |                                                                      
 |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| ![vertical_switcher](https://github.com/Cisco0xf/morph_switch/blob/main/screenshots/vertical_switcher.jpg)  | ![vertical_slider](https://github.com/Cisco0xf/morph_switch/blob/main/screenshots/vertical_slider.jpg) | | 
+| ![vertical_switcher](https://raw.githubusercontent.com/Cisco0xf/morph_switch/blob/main/screenshots/vertical_switcher.jpg)  | ![vertical_slider](https://raw.githubusercontent.com/Cisco0xf/morph_switch/blob/main/screenshots/vertical_slider.jpg) | | 
 
 
 > Rotate bothe Morphing Switch 90° on x-axis and match the icon rotation by -(pi / 2)
@@ -483,7 +483,7 @@ MorphSwitch(
 
 #### Screenshot
 
-![Sliders](https://github.com/Cisco0xf/morph_switch/blob/main/screenshots/sliders.jpg)
+![Sliders](https://raw.githubusercontent.com/Cisco0xf/morph_switch/blob/main/screenshots/sliders.jpg)
 
 ## Contributing
 
