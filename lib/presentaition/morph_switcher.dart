@@ -436,7 +436,6 @@ class _MorphSwitchState extends State<MorphSwitch> {
           return Align(
             alignment: Alignment.center,
             child: SizedBox.square(
-              
               dimension: _thumbDimension,
               child: Container(
                 decoration: BoxDecoration(
