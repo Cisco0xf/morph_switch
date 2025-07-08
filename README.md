@@ -351,6 +351,24 @@ MorphSwitch(
 
 > Customizable borderradius(`SwitcherRadius`) and gradient backgroud
 
+### Example 5
+
+#### Code :
+
+``` dart
+
+```
+
+#### Screenshote
+
+
+|Vertical MorphSwitch                                                                                           |Vertical MorphSlider                          |                                                                      
+|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| ![vertical_switcher](https://github.com/Cisco0xf/morph_switch/blob/main/screenshots/vertical_switcher.jpg)  | ![vertical_slider](https://github.com/Cisco0xf/morph_switch/blob/main/screenshots/vertical_slider.jpg) | | 
+
+
+> Rotate bothe Morphing Switch 90° on x-axis and match the icon rotation by -(pi / 2)
+
 ## MorphSlider
 
 ### Example 1
