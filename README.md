@@ -356,6 +356,62 @@ MorphSwitch(
 #### Code :
 
 ``` dart
+// Vertical Switcher
+
+              MorphSwitch(
+                stateValue: testSwitcher10,
+                switcherRadius: const SwitcherRadius.all(radius: 30.0),
+                margin: const EdgeInsets.symmetric(vertical: 30),
+
+                /*  height: context.screenHeight * .05,
+                width: context.screenWidth * .3,
+                thumpRadius: 10, */
+                switchCurve: Curves.easeInExpo,
+                onBgColor: const Color(0xFF57A6A1),
+                offBgColor: const Color(0xFFA0153E),
+                thumbOnIcon: Icons.all_inclusive_sharp,
+                thumbOffIcon: Icons.account_balance_sharp,
+                durationInMs: 700,
+                onLabel: "Up",
+                offLabel: "Down",
+                onLabelStyle:
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                offLabelStyle:
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                textPadding: 25,
+                width: _screenWidth * .35,
+                height: _screenHeight * .07,
+                thumbRadius: 25.0,
+                isVertical: true,
+                onSwitch: (newState) {
+                  setState(() => testSwitcher10 = newState);
+                },
+              ),
+
+// Vertical Slider
+
+              MorphSlider(
+                stateValue: testSwitcher15,
+                margin: const EdgeInsets.symmetric(vertical: 30),
+                isVertical: true,
+                switchCurve:
+                    !testSwitcher15 ? Curves.easeInOut : Curves.bounceOut,
+                size: SwitcherSize.xxLarge,
+                sliderRadius: 25.0,
+                onIcon: Icons.cloud_upload,
+                offIcon: Icons.cloud_download_rounded,
+                sliderBorderWidth: 2.0,
+                thumbBorderColor: const Color(0xFF4C4B16),
+                thumbBorderWidth: 2.0,
+                sliderBorderColor: const Color(0xFF4C4B16),
+                onSliderColor: const Color(0xFFE6C767),
+                offSliderColor: const Color(0xFFFFEEAD),
+                onThumbColor: const Color(0xFFA66E38),
+                offThumbColor: const Color(0xFFF2EED7),
+                onSwitch: (newValue) {
+                  setState(() => testSwitcher15 = newValue);
+                },
+              ),
 
 ```
 
