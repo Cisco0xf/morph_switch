@@ -67,7 +67,10 @@ class _EampleScreenState extends State<EampleScreen> {
                 },
               ),
               _gapH,
-              // First Row
+
+              
+
+              const SizedBox(height: 15.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
@@ -166,6 +169,7 @@ class _EampleScreenState extends State<EampleScreen> {
 
               const Divider(),
               _gapH,
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
@@ -180,7 +184,6 @@ class _EampleScreenState extends State<EampleScreen> {
                     ),
                     applyThumbRotationAnimation: false,
                     switchCurve: Curves.easeOutQuart,
-                    durationInMs: 2000,
                     thumbType:
                         testSwitcher7 ? ThumbType.square : ThumbType.circle,
                     onLabel: "ON",
@@ -251,6 +254,91 @@ class _EampleScreenState extends State<EampleScreen> {
               ),
 
               const Divider(),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  MorphSwitch(
+                    stateValue: testSwitcher7,
+                    size: SwitcherSize.small,
+                    switcherRadius: const SwitcherRadius(
+                      topLeft: 30.0,
+                      bottomLeft: 30.0,
+                      topRight: 15.0,
+                      bottomRight: 15.0,
+                    ),
+                    applyThumbRotationAnimation: false,
+                    switchCurve: Curves.easeOutQuart,
+                    durationInMs: 1000,
+                    textPadding: 5.0,
+                    thumbType:
+                        testSwitcher7 ? ThumbType.square : ThumbType.circle,
+                    onLabel: "ON",
+                    onLabelStyle: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.green,
+                    ),
+                    offLabel: "OFF",
+                    offLabelStyle: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red,
+                    ),
+                    thumbOnBgColor: Colors.green,
+                    thumbOffBgColor: Colors.red,
+                    onBgColor: const Color(0xFFb7cc92),
+                    offBgColor: const Color(0xFFf19c79),
+                    thumbOnIcon: Icons.volume_up_rounded,
+                    thumbOffIcon: Icons.volume_down_rounded,
+                    onSwitch: (newState) {
+                      setState(() => testSwitcher7 = newState);
+                    },
+                  ),
+                  _verticalDivider,
+                  MorphSwitch(
+                    stateValue: testSwitcher8,
+                    size: SwitcherSize.small,
+                    thumbOnBgColor: const Color(0xFF3eff8b),
+                    thumbOffBgColor: const Color(0xFFb5838d),
+                    thumbOnIcon: Icons.favorite,
+                    thumbOffIcon: Icons.favorite_border,
+                    onGradient: const LinearGradient(
+                      colors: <Color>[
+                        Color(0xFFf05d88),
+                        Color(0xFFc5fcee),
+                        Color(0xFF00c9a4),
+                        Color(0xFF4d8075),
+                      ],
+                      begin: Alignment.bottomLeft,
+                      end: Alignment.topRight,
+                    ),
+                    durationInMs: 500,
+                    offGradient: const LinearGradient(
+                      colors: <Color>[
+                        Color(0xFF788fc9),
+                        Color(0xFFc5fcee),
+                        Color(0xFF649b8e),
+                        Color(0xFF32675c),
+                      ],
+                      begin: Alignment.topRight,
+                      end: Alignment.bottomLeft,
+                    ),
+                    thumbBorderWidth: 1.2,
+                    thumbBorderColor: const Color(0xFF040303),
+                    borderColor: const Color(0xFF040303),
+                    switcherRadius: const SwitcherRadius(
+                      topLeft: 20.0,
+                      bottomLeft: 5.0,
+                      topRight: 5.0,
+                      bottomRight: 20.0,
+                    ),
+                    onSwitch: (newState) {
+                      setState(() => testSwitcher8 = newState);
+                    },
+                  ),
+                ],
+              ),
+
+              const Divider(),
               _gapH,
 
               MorphSwitch(
@@ -270,6 +358,12 @@ class _EampleScreenState extends State<EampleScreen> {
                 offBgIcon: Icons.credit_card_off,
                 onSwitch: (newState) {
                   setState(() => testSwitcher9 = newState);
+                },
+                onSwipeLeft: (off) {
+                  setState(() => testSwitcher9 = off);
+                },
+                onSwipeRight: (on) {
+                  setState(() => testSwitcher9 = on);
                 },
               ),
               _gapH,
@@ -359,7 +453,7 @@ class _EampleScreenState extends State<EampleScreen> {
               const Divider(),
 
               _gapH,
-     
+
               MorphSwitch(
                 stateValue: testSwitcher11,
                 onBgImage: Paths.dayImg,
@@ -467,7 +561,7 @@ class _EampleScreenState extends State<EampleScreen> {
                 ),
               ),
 
-              // Testing MorphSlider 
+              // Testing MorphSlider
 
               _gapH,
 
@@ -590,3 +684,70 @@ class _EampleScreenState extends State<EampleScreen> {
     );
   }
 }
+/* 
+class SwitchCategories extends StatefulWidget {
+  const SwitchCategories({
+    super.key,
+    required this.categories,
+  });
+
+  final List<String> categories;
+
+  @override
+  State<SwitchCategories> createState() => _SwitchCategoriesState();
+}
+
+class _SwitchCategoriesState extends State<SwitchCategories> {
+  Widget get _divider => const Divider(
+        height: 20,
+        thickness: 3.0,
+      );
+
+  double get _screenWidth => MediaQuery.sizeOf(context).width;
+  double get _screenHeight => MediaQuery.sizeOf(context).height;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+        _divider,
+        SizedBox(
+          width: _screenWidth,
+          child: Wrap(
+            children: <Widget>[
+              for (int i = 0; i < widget.categories.length; i++) ...{
+                Container(
+                  width: _screenWidth * .25,
+                  height: _screenHeight * .07,
+                  padding: const EdgeInsets.all(8.0),
+                  margin: const EdgeInsets.all(8.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    border: Border.all(
+                      color: Colors.grey,
+                      width: 1.4,
+                    ),
+                  ),
+                  alignment: Alignment.center,
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      widget.categories[i],
+                      style: const TextStyle(
+                        fontSize: 15,
+                        // color: Colors.grey,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                )
+              }
+            ],
+          ),
+        ),
+        _divider,
+      ],
+    );
+  }
+}
+ */

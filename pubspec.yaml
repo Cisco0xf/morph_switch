@@ -1,17 +1,12 @@
 name: morph_switch
-description: "A Flutter package for morphing animated switches/sliders with gradients, icons, and glass effects. Highly customizable shapes, sizes, and animations. Perfect for modern UIs."
+description: A Flutter package for morphing animated switches/sliders with gradients, icons, and glass effects. Highly customizable shapes, sizes, and animations. Perfect for modern UIs.
 version: 0.0.1
-homepage:
+homepage: https://github.com/Cisco0xf/morph_switch.git
+repository: https://github.com/Cisco0xf/morph_switch.git
+issue_tracker: https://github.com/Cisco0xf/morph_switch/issues
 
-topics:
-  - flutter
-  - ui
-  - switch
-  - slider
-  - toggle
-  - animation
-  - customization
-  - material-design
+topics: [morph_switch, switch, slider, animation, flutter, ui]
+  
 
 platforms:
   android:

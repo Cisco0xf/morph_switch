@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/widgets.dart';
 import 'package:morph_switch/models/glass_layer_model.dart';
 
+// Glass Layer that will be shown over the image || the background
+
 class GlassLayer extends StatelessWidget {
   const GlassLayer({
     super.key,
