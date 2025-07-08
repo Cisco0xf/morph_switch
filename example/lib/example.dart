@@ -68,8 +68,6 @@ class _EampleScreenState extends State<EampleScreen> {
               ),
               _gapH,
 
-              
-
               const SizedBox(height: 15.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -643,39 +641,6 @@ class _EampleScreenState extends State<EampleScreen> {
                 },
               ),
 
-              /* MorphSwitch(
-                stateValue: testSwitcher1,
-                borderColor: Colors.lightBlue,
-                borderWidth: 2.0,
-                thumbOnIcon: Icons.dark_mode,
-                thumbOffIcon: Icons.light_mode,
-                onBgColor: Colors.green,
-                offBgColor: Colors.grey,
-                thumbOffBgColor: Colors.blueGrey,
-                disabled: false,
-                iconTransitionStyle: IconTransitionStyle.fade,
-                applyThumbRotationAnimation: false,
-                switchCurve: Curves.easeInCubic,
-                switcherRadius: const SwitcherRadius(
-                  topLeft: 50.0,
-                  topRight: 10.0,
-                  bottomLeft: 50.0,
-                  bottomRight: 10.0,
-                ),
-                width: _screenWidth * .4,
-                height: _screenHeight * .09,
-                thumbRadius: 40.0,
-                durationInMs: 300,
-                thumbType: testSwitcher1 ? ThumbType.square : ThumbType.circle,
-                size: SwitcherSize.large,
-                onSwitch: (newValue) {
-                  setState(
-                    () {
-                      testSwitcher1 = newValue;
-                    },
-                  );
-                },
-              ), */
               SizedBox(height: _screenHeight * .1),
             ],
           ),
@@ -684,70 +649,3 @@ class _EampleScreenState extends State<EampleScreen> {
     );
   }
 }
-/* 
-class SwitchCategories extends StatefulWidget {
-  const SwitchCategories({
-    super.key,
-    required this.categories,
-  });
-
-  final List<String> categories;
-
-  @override
-  State<SwitchCategories> createState() => _SwitchCategoriesState();
-}
-
-class _SwitchCategoriesState extends State<SwitchCategories> {
-  Widget get _divider => const Divider(
-        height: 20,
-        thickness: 3.0,
-      );
-
-  double get _screenWidth => MediaQuery.sizeOf(context).width;
-  double get _screenHeight => MediaQuery.sizeOf(context).height;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        _divider,
-        SizedBox(
-          width: _screenWidth,
-          child: Wrap(
-            children: <Widget>[
-              for (int i = 0; i < widget.categories.length; i++) ...{
-                Container(
-                  width: _screenWidth * .25,
-                  height: _screenHeight * .07,
-                  padding: const EdgeInsets.all(8.0),
-                  margin: const EdgeInsets.all(8.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20.0),
-                    border: Border.all(
-                      color: Colors.grey,
-                      width: 1.4,
-                    ),
-                  ),
-                  alignment: Alignment.center,
-                  child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      widget.categories[i],
-                      style: const TextStyle(
-                        fontSize: 15,
-                        // color: Colors.grey,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                )
-              }
-            ],
-          ),
-        ),
-        _divider,
-      ],
-    );
-  }
-}
- */
