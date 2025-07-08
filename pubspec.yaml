@@ -5,7 +5,7 @@ homepage: https://github.com/Cisco0xf/morph_switch.git
 repository: https://github.com/Cisco0xf/morph_switch.git
 issue_tracker: https://github.com/Cisco0xf/morph_switch/issues
 
-topics: [morph_switch, switch, slider, animation]
+topics: [switch, slider, animation, toggle]
   
 
 platforms:
