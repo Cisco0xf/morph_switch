@@ -359,7 +359,7 @@ class _EampleScreenState extends State<EampleScreen> {
               const Divider(),
 
               _gapH,
-
+     
               MorphSwitch(
                 stateValue: testSwitcher11,
                 onBgImage: Paths.dayImg,
@@ -466,6 +466,8 @@ class _EampleScreenState extends State<EampleScreen> {
                   ],
                 ),
               ),
+
+              // Testing MorphSlider 
 
               _gapH,
 
