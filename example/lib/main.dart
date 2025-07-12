@@ -464,6 +464,7 @@ class _EampleScreenState extends State<EampleScreen> {
 
                 /*  height: context.screenHeight * .05,
                 width: context.screenWidth * .3,
+                3:41
                 thumpRadius: 10, */
                 switchCurve: Curves.easeInExpo,
                 onBgColor: const Color(0xFF57A6A1),

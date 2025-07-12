@@ -4,7 +4,6 @@ enum ThumbType {
   circle,
 }
 
-
 /// Enum to select the bcackground image animation transition
 enum ImageTransitionAnimationStyle {
   scale,
@@ -12,8 +11,7 @@ enum ImageTransitionAnimationStyle {
   none,
 }
 
-
-/// Enum to animated the icon on the thumb 
+/// Enum to animated the icon on the thumb
 enum IconTransitionStyle {
   fade,
   scale,
